@@ -1,6 +1,5 @@
 #ifndef INTERPRETER_YULIIA_SHAPOVAL_LEXER_H
 #define INTERPRETER_YULIIA_SHAPOVAL_LEXER_H
-#pragma once
 #include <string>
 #include <vector>
 

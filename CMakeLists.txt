@@ -5,4 +5,8 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(interpreter_yuliia_shapoval main.cpp
         Lexer.cpp
-        Lexer.h)
+        Lexer.h
+        AST.cpp
+        AST.h
+        Parser.cpp
+        Parser.h)
