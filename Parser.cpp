@@ -101,7 +101,12 @@ std::unique_ptr<ASTNode> Parser::primary() {
     if (match(TokenType::Number)) {
         return std::make_unique<NumberNode>(std::stod(previous().value));
     }
-    
+
+    if (match(TokenType::Minus)) {
+        auto operand = primary();
+        return std::make_unique<BinaryOpNode>('-', std::make_unique<NumberNode>(0.0), std::move(operand));
+    }
+
     if (match(TokenType::Identifier)) {
         std::string name = previous().value;
 
