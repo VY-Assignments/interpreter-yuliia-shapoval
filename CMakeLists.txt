@@ -9,4 +9,6 @@ add_executable(interpreter_yuliia_shapoval main.cpp
         AST.cpp
         AST.h
         Parser.cpp
-        Parser.h)
+        Parser.h
+        Evaluator.cpp
+        Evaluator.h)
